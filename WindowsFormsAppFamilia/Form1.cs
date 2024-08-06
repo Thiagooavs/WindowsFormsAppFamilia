@@ -22,8 +22,8 @@ namespace WindowsFormsAppFamilia
             int gasto = int.Parse(txt_Agua.Text) + int.Parse(txt_Alimentacao.Text) + int.Parse(txt_Energia.Text) + int.Parse(txt_outro.Text) + int.Parse(txt_TV.Text);
             int saldo = int.Parse(txt_Grana.Text) - gasto;
             
-            lbl_Saldo.Text = saldo.ToString();
-            lbl_Total.Text = gasto.ToString();
+            lbl_Saldo.Text = saldo.ToString("C");
+            lbl_Total.Text = gasto.ToString("C");
 
         }
 
